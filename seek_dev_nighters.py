@@ -33,6 +33,7 @@ def print_owl_users(user_list):
 
 
 if __name__ == '__main__':
-    attempts_data = load_attempts_data(10)
+    available_pages = 10
+    attempts_data = load_attempts_data(available_pages)
     owl_users = get_midnighters(attempts_data)
     print_owl_users(owl_users)
